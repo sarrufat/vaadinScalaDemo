@@ -1,0 +1,21 @@
+@import "addons.scss";
+@import "monitor.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in monitor.scss */
+.monitor {
+  @include addons;
+  @include monitor;
+}
+
+ .v-app {
+	background-color: #4d76a0;
+		background: -webkit-gradient(radial, 50% 50%, 1000, from(#cce9ff), to(#4d76a0));
+		background: -moz-radial-gradient(50% 50%, circle, #cce9ff 0px, #4d76a0 1000px);
+}
+
+.v-horizontallayout {
+	background-color: #5585aa;
+	border-radius: 10px;
+	webkit-box-shadow: #000 0px 0px 60px;
+}
